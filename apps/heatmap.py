@@ -21,7 +21,7 @@ def app():
     filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
 
     m.add_shp(chemin, layer_name="Countries")
-    zoom_to_gdf(self, chemin)
+ 
 
     """
     m.add_heatmap(
