@@ -3,6 +3,39 @@ import leafmap.foliumap as leafmap
 import folium 
 
 
+def calculate_distance_view(request):
+    form = addressModelForm(request.POST or None)
+    glocator = Nominatim(user_agent='reporter')
+    model = Services
+    context_object_name = "services"
+    m = folium.Map(width=800, height=500, location=user_location_init, zoom_start=10)
+
+    if form.is_valid():
+         user_address = form.cleaned_data.get('user_location')
+         user_location = glocator.geocode(user_address)
+         d_lat = user_location.latitude
+         d_long = user_location.longitude
+         current_location = Point(d_lat, d_long, srid=4326)
+         nearbyobj = Services.objects.annotate(distance=Distance("location", current_location)).order_by("distance")[0:3]
+
+         m = folium.Map(width=800, height=500, location=user_location_init, zoom_start=10)
+         folium.Marker([d_lat, d_long], tooltip='click here for more', popup=user_location,
+                       icon=folium.Icon(color='red', icon='cloud')).add_to(m)
+
+
+    m = m._repr_html_()
+
+    context = {
+        'form': form,
+        'model': model,
+        'nearbyobj': 'nearbyobj',
+        'map': m
+    }
+    return render(request, 'index.html', context)
+
+
+
+
 
 
 def app():
