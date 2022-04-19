@@ -11,12 +11,12 @@ def app():
 
     form = st.form("my_form")
 
-    with st.form(key='my_form'):
+ 
 
 
-        longitude = st.text_input('Longitude : ', '')
-        lattitude=  st.text_input('Lattitude : ', '')
-        form.form_submit_button("Recherecher le point le plus proche")
+    form.text_input('Longitude : ', '')
+    form.text_input('Lattitude : ', '')
+    form.form_submit_button("Recherecher le point le plus proche")
 
 
 
