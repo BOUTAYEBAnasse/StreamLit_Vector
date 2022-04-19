@@ -1,5 +1,6 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
+import folium 
 
 
 
@@ -46,7 +47,7 @@ def app():
 
 
 
-    leafmap.Marker( location=[52.126744,-1.077901]).add_to(m)
+    folium.Marker( location=[52.126744,-1.077901]).add_to(m)
 
     #leafmap.Marker([longitude_value, lattitude_value], tooltip='click here for more', popup=user_location,
     #icon=leafmap.Icon(color='red', icon='cloud')).add_to(m)
