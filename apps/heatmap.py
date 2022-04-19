@@ -4,7 +4,7 @@ import streamlit as st
 import leafmap.foliumap as leafmap
 import folium 
 
-from geopy.distance import distance 
+#from geopy.distance import distance 
 
 
 
@@ -38,7 +38,7 @@ def app():
 
     location2=51.509093, -0.094151
 
-    miles=distance(location1, location2)
+    #miles=distance(location1, location2)
 
     form.text_area=miles
 
