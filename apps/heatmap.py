@@ -71,12 +71,12 @@ def app():
     m.add_shp(layer, layer_name="Countries")
 
 
-    current_location = Point(d_lat, d_long, srid=4326)
+    current_location = Point(lattitude_value, lattitude_value, srid=4326)
 
 
 
 
-    folium.Marker([longitude_value, lattitude_value], tooltip='click here for more', popup=user_location,
+    folium.Marker([longitude_value, longitude_value], tooltip='click here for more', popup=user_location,
     icon=folium.Icon(color='red', icon='cloud')).add_to(m)
 
 
