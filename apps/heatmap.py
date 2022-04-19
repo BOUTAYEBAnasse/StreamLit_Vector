@@ -46,7 +46,7 @@ def app():
 
 
 
-    folium.Marker( location=[52.126744,-1.077901]).add_to(m)
+    leafmap.Marker( location=[52.126744,-1.077901]).add_to(m)
 
     #leafmap.Marker([longitude_value, lattitude_value], tooltip='click here for more', popup=user_location,
     #icon=leafmap.Icon(color='red', icon='cloud')).add_to(m)
