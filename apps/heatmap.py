@@ -19,6 +19,9 @@ def app():
     #st.title("Heatmap")
 
     filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
+
+    m.add_shp(chemin, layer_name="Countries")
+
     """
     m.add_heatmap(
         filepath,
@@ -29,4 +32,4 @@ def app():
         radius=20,
     )
     """
-    #m.to_streamlit(height=700)
+    m.to_streamlit(height=700)
