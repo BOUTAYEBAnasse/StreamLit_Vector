@@ -19,7 +19,7 @@ def app():
 
     #Form :
 
-    st.write('The current movie title is', title)
+    #st.write('The current movie title is', title)
     form.form_submit_button("Submit")
 
 
