@@ -14,7 +14,7 @@ def app():
     #m.add_shp(chemin, layer_name="Railways")
     #m.to_streamlit(height=700)
 
-
+ 
 
     #st.title("Heatmap")
 
@@ -22,7 +22,7 @@ def app():
 
     m.add_shp(chemin, layer_name="Countries")
 
-    m.fitBounds(chemin.getBounds())
+    #m.fitBounds(chemin.getBounds())
     """
     m.add_heatmap(
         filepath,
