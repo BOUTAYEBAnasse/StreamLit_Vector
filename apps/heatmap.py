@@ -32,7 +32,7 @@ def app():
     lattitude_value=-1.077901
 
     
-    current_location = Point(51.509093, -0.094151, srid=4326)
+    #current_location = Point(51.509093, -0.094151, srid=4326)
 
 
 
