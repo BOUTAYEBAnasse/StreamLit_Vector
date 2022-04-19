@@ -4,7 +4,7 @@ import streamlit as st
 import leafmap.foliumap as leafmap
 import folium 
 
-from geopy import distance 
+from geopy.distance import distance 
 
 
 
