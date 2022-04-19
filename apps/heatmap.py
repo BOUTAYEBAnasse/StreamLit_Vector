@@ -4,16 +4,12 @@ import leafmap.foliumap as leafmap
 
 def app():
 
-    st.title("Heatmap")
+    st.title("Railways")
 
     filepath = "C:\Users\admin\Desktop\GBR_rrd\GBR_rails.shp"
-    m = leafmap.Map(tiles="stamentoner")
-    m.add_heatmap(
-        filepath,
-        latitude="latitude",
-        longitude="longitude",
-        #value="pop_max",
-        name="Heat map",
-        radius=20,
-    )
-    m.to_streamlit(height=700)
+
+    m = leafmap.Map(center=[0, 0], zoom=2)
+
+
+    m.add_shp(filepath, layer_name="Railways")
+
