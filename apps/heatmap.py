@@ -12,12 +12,5 @@ def app():
 
     filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
     m = leafmap.Map(tiles="stamentoner")
-    m.add_heatmap(
-        filepath,
-        latitude="latitude",
-        longitude="longitude",
-        value="pop_max",
-        name="Heat map",
-        radius=20,
-    )
+    m.add_shp(chemin, layer_name="Railways")
     m.to_streamlit(height=700)
