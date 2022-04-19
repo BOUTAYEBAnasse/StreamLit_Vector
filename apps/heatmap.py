@@ -39,6 +39,7 @@ def app():
     location2=51.509093, -0.094151
 
     #miles=distance(location1, location2)
+    miles='zabbi'
 
     form.text_area=miles
 
