@@ -45,10 +45,10 @@ def app():
     current_location = Point(longitude_value, lattitude_value, srid=4326)
 
 
+    folium.Marker( location=[data.iloc[i]['lat'], data.iloc[i]['lon']], popup=data.iloc[i]['name']).add_to(m)
 
-
-    leafmap.Marker([longitude_value, lattitude_value], tooltip='click here for more', popup=user_location,
-    icon=leafmap.Icon(color='red', icon='cloud')).add_to(m)
+    #leafmap.Marker([longitude_value, lattitude_value], tooltip='click here for more', popup=user_location,
+    #icon=leafmap.Icon(color='red', icon='cloud')).add_to(m)
 
 
 
