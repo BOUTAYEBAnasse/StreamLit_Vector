@@ -55,9 +55,6 @@ def app():
 
 
 
-
-
-
     layer='./GBR_rrd/GBR_rails.shp'
 
 
@@ -72,6 +69,15 @@ def app():
     path= "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
 
     m.add_shp(layer, layer_name="Countries")
+
+
+    current_location = Point(d_lat, d_long, srid=4326)
+
+
+
+
+    folium.Marker([longitude_value, lattitude_value], tooltip='click here for more', popup=user_location,
+    icon=folium.Icon(color='red', icon='cloud')).add_to(m)
 
 
     #m.fitBounds(chemin.getBounds())
