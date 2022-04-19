@@ -7,7 +7,7 @@ def app():
     #st.title("Heatmap")
 
 
-    path='./GBR_rrd/GBR_rails.shp'
+    layer='./GBR_rrd/GBR_rails.shp'
 
 
     m = leafmap.Map(center=[52.126744,-1.077901], zoom=6)
@@ -15,12 +15,13 @@ def app():
     #m.to_streamlit(height=700)
 
  
-
+    
     #st.title("Heatmap")
 
-    filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
+    path= "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
 
-    m.add_shp(path, layer_name="Countries")
+    m.add_shp(layer, layer_name="Countries")
+
 
     #m.fitBounds(chemin.getBounds())
     """
