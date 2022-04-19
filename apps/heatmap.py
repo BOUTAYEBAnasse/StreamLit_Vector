@@ -53,7 +53,7 @@ def app():
 
 
     #current_location = Point(longitude_value, lattitude_value, srid=4326)
-
+    m.add_points_from_xy(data, x= 51.509093, y=-0.094151)
 
 
     folium.Marker( location=[52.126744,-1.077901]).add_to(m)
