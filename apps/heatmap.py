@@ -20,7 +20,8 @@ def app():
     lattitude_value=form.text_input('Lattitude : ', '')
     form.form_submit_button("Recherecher le point le plus proche")
 
-
+    longitude_value=52.126744
+    lattitude_value=-1.077901
 
 
 
