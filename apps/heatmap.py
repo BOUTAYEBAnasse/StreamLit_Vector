@@ -7,7 +7,7 @@ def app():
     #st.title("Heatmap")
 
 
-    chemin='../GBR_rrd/GBR_rails.shp'
+    chemin='./GBR_rrd/GBR_rails.shp'
 
 
     m = leafmap.Map(center=[0, 0], zoom=2)
