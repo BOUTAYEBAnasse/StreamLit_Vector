@@ -47,8 +47,10 @@ def app():
 
 
 
-    folium.Marker([longitude_value, lattitude_value], tooltip='click here for more', popup=user_location,
-    icon=folium.Icon(color='red', icon='cloud')).add_to(m)
+    leafmap.Marker([longitude_value, lattitude_value], tooltip='click here for more', popup=user_location,
+    icon=leafmap.Icon(color='red', icon='cloud')).add_to(m)
+
+    
 
 
     #m.fitBounds(chemin.getBounds())
