@@ -21,7 +21,7 @@ def app():
     filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
 
     m.add_shp(chemin, layer_name="Countries")
- 
+    m.fit_bounds(m.get_bounds(), padding=(30, 30))
 
     """
     m.add_heatmap(
