@@ -10,7 +10,7 @@ def app():
     chemin='../GBR_rrd/GBR_rails.shp'
 
 
-    #m = leafmap.Map(tiles="stamentoner")
+    m = leafmap.Map(center=[0, 0], zoom=2)
     #m.add_shp(chemin, layer_name="Railways")
     #m.to_streamlit(height=700)
 
