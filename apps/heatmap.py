@@ -4,7 +4,12 @@ import leafmap.foliumap as leafmap
 
 def app():
 
-    #st.title("Heatmap")
+    st.title("Get the nearest point")
+
+    #random_column = st.selectbox("Select a column to apply random colors", column_names)
+
+
+    user_input = st.text_input("label goes here", default_value_goes_here)
 
 
     layer='./GBR_rrd/GBR_rails.shp'
