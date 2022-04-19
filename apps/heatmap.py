@@ -29,14 +29,18 @@ def app():
     longitude_value=form.text_input('Longitude : ', '')
     lattitude_value=form.text_input('Lattitude : ', '')
     form.form_submit_button("Recherecher le point le plus proche")
-
+    
     longitude_value=52.126744
     lattitude_value=-1.077901
 
     
+    location1=52.12674,-1.077901
 
+    location2=51.509093, -0.094151
 
+    miles=distance(location1, location2)
 
+    form.text_area=miles
 
     layer='./GBR_rrd/GBR_rails.shp'
 
