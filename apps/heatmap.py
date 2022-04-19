@@ -11,19 +11,16 @@ def app():
 
     form = st.form("my_form")
 
+    with st.form(key='my_form'):
 
 
-    longitude = st.text_input('Longitude :', '')
-    lattitude=  st.text_input('Lattitude :', '')
+        longitude = st.text_input('Longitude : ', '')
+        lattitude=  st.text_input('Lattitude : ', '')
+        form.form_submit_button("Recherecher le point le plus proche")
 
 
-    #Form :
-
-    #st.write('The current movie title is', title)
-    form.form_submit_button("Submit")
 
 
-    #random_column = st.selectbox("Select a column to apply random colors", column_names)
 
 
 
