@@ -2,7 +2,6 @@ import streamlit as st
 import leafmap.foliumap as leafmap
 
 
-    return render(request, 'index.html', context)
 
 
 def app():
@@ -50,7 +49,7 @@ def app():
     leafmap.Marker([longitude_value, lattitude_value], tooltip='click here for more', popup=user_location,
     icon=leafmap.Icon(color='red', icon='cloud')).add_to(m)
 
-    
+
 
 
     #m.fitBounds(chemin.getBounds())
