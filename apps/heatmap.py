@@ -11,9 +11,14 @@ def app():
 
     form = st.form("my_form")
 
-    # Now add a submit button to the form:
 
-    title = st.text_input('Movie title', 'Life of Brian')
+
+    longitude = st.text_input('Longitude :', '')
+    lattitude=  st.text_input('Lattitude :', '')
+
+
+    #Form :
+
     st.write('The current movie title is', title)
     form.form_submit_button("Submit")
 
