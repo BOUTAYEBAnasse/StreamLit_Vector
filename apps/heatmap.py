@@ -10,13 +10,13 @@ def app():
     chemin='../GBR_rrd/GBR_rails.shp'
 
 
-    m = leafmap.Map(tiles="stamentoner")
+    #m = leafmap.Map(tiles="stamentoner")
     #m.add_shp(chemin, layer_name="Railways")
     #m.to_streamlit(height=700)
 
 
 
-    st.title("Heatmap")
+    #st.title("Heatmap")
 
     filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
     """
@@ -29,4 +29,4 @@ def app():
         radius=20,
     )
     """
-    m.to_streamlit(height=700)
+    #m.to_streamlit(height=700)
